@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="km">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ផលិតផលថ្មីរបស់យើង - Our New Product</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <div class="logo">
+            <img
+              src="./img/Capture-removebg-preview.png"
+              width="100px"
+              alt="CAMBO NET Logo"
+            />
+            <span>CAMBO NET</span>
+          </div>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">ទំព័រដើម</a></li>
+            <li><a href="#features" class="nav-link">លក្ខណៈពិសេស</a></li>
+            <li><a href="#products" class="nav-link">ផលិតផល</a></li>
+            <li><a href="#product-overview" class="nav-link">សាកល្បង</a></li>
+            <li><a href="#order" class="nav-link">បញ្ជាទិញ</a></li>
+            <li><button class="login-btn" id="loginToggle">ចូលគណនី</button></li>
+          </ul>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section with Slider -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">ផលិតផលថ្មីស្បៃម្លប់</h1>
+        <p class="hero-description">តម្លៃបោះដុំពីរោងចក្រ (ទាបជាងទីផ្សារ)</p>
+        <button class="cta-button" id="orderNowBtn">បញ្ជាទិញឥឡូវ</button>
+      </div>
+      <div class="hero-image">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide active">
+              <img src="./img/2.png" alt="ស្បៃម្លប់ ១" />
+            </div>
+            <div class="slide">
+              <img src="./img/៣.png" alt="ស្បៃម្លប់ ២" />
+            </div>
+            <div class="slide">
+              <img src="./img/៤.png" alt="ស្បៃម្លប់ ៣" />
+            </div>
+            <div class="slide">
+              <img src="./img/៦.png" alt="ស្បៃម្លប់ ៤" />
+            </div>
+            <div class="slide">
+              <img src="./img/៨.png" alt="ស្បៃម្លប់ ៥" />
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-btn next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="slider-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+      <div class="container">
+        <h2 class="section-title">លក្ខណៈពិសេស</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-shield-alt"></i>
+            <h3>សុវត្ថិភាព</h3>
+            <p>ការពារដំណាំ ចំការ ផ្ទះ របស់អ្នក</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-palette"></i>
+            <h3>ស្អាត</h3>
+            <p>ការរចនាទាន់សម័យ</p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-headset"></i>
+            <h3>គាំទ្រ</h3>
+            <p>សេវាកម្មគាំទ្រផលិតផលខ្មែរ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+      <div class="container">
+        <h2 class="section-title">ផលិតផលរបស់យើង</h2>
+        <p class="section-subtitle">
+          ជ្រើសរើសផលិតផលដែលល្អបំផុតសម្រាប់តម្រូវការរបស់អ្នក
+        </p>
+
+        <div class="products-filter">
+          <button class="filter-btn active" data-filter="all">ទាំងអស់</button>
+          <button class="filter-btn" data-filter="premium">ម្ជុល ៣</button>
+          <button class="filter-btn" data-filter="standard">ម្ជុល ៦</button>
+          <button class="filter-btn" data-filter="accessory">ម្ជុល ៨</button>
+        </div>
+
+        <div class="products-grid">
+          <!-- Product 1 -->
+          <div class="product-card" data-category="premium">
+            <div class="product-image">
+              <img src="./img/៣.png" alt="ម្ជុល ៣ (ស្ដើង)" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">ម្ជុល ៣ (ស្ដើង)</h3>
+              <p class="product-description">ការពារកម្ដៅបាន ៦០%</p>
+              <div class="product-options">
+                <!-- Options will be added by JavaScript -->
+              </div>
+              <div class="product-price">
+                <span class="current-price">$129.99</span>
+                <span class="original-price">$149.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-product="1">
+                <i class="fas fa-shopping-cart"></i> បន្ថែមទៅកន្ត្រក
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 2 -->
+          <div class="product-card" data-category="standard">
+            <div class="product-image">
+              <img src="./img/៦.png" alt="ម្ជុល ៦ (កណ្ដាល)" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">ម្ជុល ៦ (កណ្ដាល)</h3>
+              <p class="product-description">ការពារកម្ដៅបាន ៨០%</p>
+              <div class="product-options">
+                <!-- Options will be added by JavaScript -->
+              </div>
+              <div class="product-price">
+                <span class="current-price">$199.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-product="2">
+                <i class="fas fa-shopping-cart"></i> បន្ថែមទៅកន្ត្រក
+              </button>
+            </div>
+          </div>
+
+          <!-- Product 3 -->
+          <div class="product-card" data-category="accessory">
+            <div class="product-image">
+              <img src="./img/៨.png" alt="ម្ជុល ៨ (ក្រាស់)" />
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">ម្ជុល ៨ (ក្រាស់)</h3>
+              <p class="product-description">ការពារកម្ដៅបាន ៩០%</p>
+              <div class="product-options">
+                <!-- Options will be added by JavaScript -->
+              </div>
+              <div class="product-price">
+                <span class="current-price">$299.99</span>
+                <span class="original-price">$349.99</span>
+              </div>
+              <button class="add-to-cart-btn" data-product="3">
+                <i class="fas fa-shopping-cart"></i> បន្ថែមទៅកន្ត្រក
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Overview -->
+    <section id="product-overview" class="product-overview">
+      <div class="container">
+        <h2 class="section-title">ទិដ្ឋភាពផលិតផល</h2>
+        <div class="product-content">
+          <div class="product-info">
+            <h3>ផលិតផលដែលអាចប្រែក្លាយជីវិតរបស់អ្នក</h3>
+            <ul class="product-features-list">
+              <li><i class="fas fa-check"></i> ផលិតផលនៅក្នុងប្រទេស</li>
+              <li>
+                <i class="fas fa-check"></i> អ្នកជំនាញជនជាតិខ្មែរ និង បរទេស
+              </li>
+              <li><i class="fas fa-check"></i> មានច្រើនកម្រាស់ ច្រើនខ្នាត</li>
+              <li><i class="fas fa-check"></i> ធននិងកម្ដៅបានល្អ</li>
+              <li><i class="fas fa-check"></i> រយះកាលប្រើប្រាស់វវែង</li>
+              <li><i class="fas fa-check"></i> ការគាំទ្របច្ចេកទេស ២៤/៧</li>
+            </ul>
+          </div>
+          <div class="product-visual">
+            <div class="product-overview-image">
+              <img src="./img/៤.png" alt="ទិដ្ឋភាពផលិតផល" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+      <div class="cart-header">
+        <h3>កន្ត្រកទិញឥវ៉ាន់</h3>
+        <button class="close-cart" id="closeCart">&times;</button>
+      </div>
+      <div class="cart-items" id="cartItems">
+        <div class="empty-cart-message">
+          <i class="fas fa-shopping-cart"></i>
+          <p>កន្ត្រកទិញឥវ៉ាន់របស់អ្នកទទេ</p>
+        </div>
+      </div>
+      <div class="cart-footer">
+        <div class="cart-total">
+          <span>សរុប:</span>
+          <span id="cartTotalAmount">$0</span>
+        </div>
+        <button class="checkout-btn" id="checkoutBtn">បន្តការបញ្ជាទិញ</button>
+      </div>
+    </div>
+
+    <!-- Cart Icon -->
+    <div class="cart-icon" id="cartIcon">
+      <i class="fas fa-shopping-cart"></i>
+      <span class="cart-count" id="cartCount">0</span>
+    </div>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-section">
+      <div class="container">
+        <h2 class="section-title">បញ្ជាទិញឥឡូវ</h2>
+        <form class="order-form" id="orderForm">
+          <div class="form-group">
+            <label for="name">ឈ្មោះពេញ</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">អ៊ីមែល</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">លេខទូរស័ព្ទ</label>
+            <input type="tel" id="phone" name="phone" required />
+          </div>
+          <div class="form-group">
+            <label for="address">អាសយដ្ឋាន</label>
+            <textarea id="address" name="address" rows="3" required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="payment">វិធីសាស្ត្រទូទាត់</label>
+            <select id="payment" name="payment" required>
+              <option value="">ជ្រើសរើសវិធីសាស្ត្រទូទាត់</option>
+              <option value="aba">ABA Pay</option>
+              <option value="wing">Wing</option>
+              <option value="cash">ទូទាត់សាច់ប្រាក់</option>
+              <option value="card">កាតឥណទាន</option>
+            </select>
+          </div>
+          <button type="submit" class="submit-order-btn">បញ្ជាទិញ</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>ចូលគណនី</h2>
+        <form class="login-form" id="loginForm">
+          <div class="form-group">
+            <label for="username">ឈ្មោះអ្នកប្រើ</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+          <div class="form-group">
+            <label for="password">ពាក្យសម្ងាត់</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" class="login-submit-btn">ចូល</button>
+        </form>
+        <p class="register-link">
+          មិនទាន់មានគណនី? <a href="#" id="showRegister">ចុះឈ្មោះ</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2>ចុះឈ្មោះ</h2>
+        <form class="register-form" id="registerForm">
+          <div class="form-group">
+            <label for="reg-email">អ៊ីមែល</label>
+            <input type="email" id="reg-email" name="reg-email" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-username">ឈ្មោះអ្នកប្រើ</label>
+            <input type="text" id="reg-username" name="reg-username" required />
+          </div>
+          <div class="form-group">
+            <label for="reg-password">ពាក្យសម្ងាត់</label>
+            <input
+              type="password"
+              id="reg-password"
+              name="reg-password"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="reg-confirm-password">បញ្ជាក់ពាក្យសម្ងាត់</label>
+            <input
+              type="password"
+              id="reg-confirm-password"
+              name="reg-confirm-password"
+              required
+            />
+          </div>
+          <button type="submit" class="register-submit-btn">ចុះឈ្មោះ</button>
+        </form>
+        <p class="login-link">
+          មានគណនីរួចហើយ? <a href="#" id="showLogin">ចូល</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>ផលិតផលយើង</h3>
+            <p>ផ្តល់នូវផលិតផលដែលមានគុណភាពខ្ពស់បំផុតសម្រាប់អតិថិជន</p>
+          </div>
+          <div class="footer-section">
+            <h3>ទំនាក់ទំនង</h3>
+            <p><i class="fas fa-phone"></i> 012 345 678</p>
+            <p><i class="fas fa-envelope"></i> info@example.com</p>
+          </div>
+          <div class="footer-section">
+            <h3>តាមដានយើង</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-telegram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 CAMBO NET. រក្សាសិទ្ធិគ្រប់យ៉ាង</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
